@@ -1,0 +1,28 @@
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    --font-accent: 'Space Mono', monospace;
+    /* English Level Colors*/
+    --level-a1: #B7CFB8;
+    --level-a2: #FFF2D1;
+    --level-b1: #C9D8E6;
+    --level-b2: #FED7AA;
+    /* Light Mode*/
+    --bg-main: #FBF8F4;        /* Zen Paper: Warm, clean cream background color */
+    --bg-card: #FFFFFF;        /* Pure crisp white to create elevated, clean structural card containers */
+    --text-primary: #3C4556;   /* Deep Slate: High contrast reading text for clear visibility */
+    --text-muted: #6C7A89;     /* Soft slate gray for lower-contrast secondary instructions and subtitles */
+    --border-color: #E6DFD5;    /* Very soft tan for subtle dividers, borders, and line grids */
+    --brand-lilac: #e9d5ff;     /* Lilac: Brand Identity Color */
+
+    --container-max-width: 1200px;
+    --section-spacing-desktop: 80px auto;
+}
+
+[data-theme="dark"] {
+    --bg-main: #1A1F26;        /* Deep midnight slate background for a restful night-study mode */
+    --bg-card: #242B35;        /* Slightly lighter midnight slate so card structures stand out against the background */
+    --text-primary: #FBF8F4;   /* Zen Paper: Inverted to become the primary clear reading text on dark backgrounds */
+    --text-muted: #A3B1C2;     /* Subdued light slate gray to keep instructions and labels secondary */
+    --border-color: #323C4A;   /* Subdued dark border lines that don't distract the eye */
+}
+

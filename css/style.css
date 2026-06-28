@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main); 
+    color: var(--text-primary); 
+    font-family: var(--font-primary);
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+/* Nav Tracking Bar */
+.public-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid var(var--border-color);
+}
+
+/* Text Logo */
+.brand-logo {
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+/* Buttons */
+
+.header-controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.lang-switch-capsule {
+    display: flex;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lang-option {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 15px;
+    color: var(--text-muted);
+    transition: all 0.2s ease;
+}
+
+.lang-option.active {
+    background-color: var(--text-primary);
+    color: var(--bg-main);
+}
+
+.icon-utility-btn:hover {
+    transform: scale(1.1);
+}
+
+.theme-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.signup-btn {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.signup-btn:hover {
+    background-color: var(--border-color);
+    transform: translateY(-2px);
+}
+
+.utility-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.utility-btn:hover {
+    background-color: var(--border-color);
+    transform: translateY(-1px);
+}
+
+.login-btn {
+    background-color: var(--brand-lilac);
+    color: #242b35;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.lobin-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(233, 213, 255, 0.4);
+}
+
+/* Hero Desk Grid */
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.marketing-title {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.highlight {
+    background-color: var(--brand-lilac);
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.marketing-subtitle {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Flashcard Visual */
+.hero-interactive-preview {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Dynamic Flashcard Hub Interface */
+
+.public-sample-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    width: 300px;
+    height: 480px;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+}
+
+.card-front-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    margin-bottom: 0px;
+}
+
+.preview-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--text-primary);
+    font-family: var(--font-accent);
+    font-size: 1rem;
+}
+
+.preview-word {
+    font-family: var(--font-accent);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.preview-divider {
+    width: 60px;
+    height: 4px;
+    background: var(--level-a1);
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.preview-phonetic-sound {
+    bottom: 100px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.preview-details {
+    font-family: var(--font-primary);
+    padding-top: 5px;
+}
+
+.preview-details p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.preview-details small {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+/* Open Directory Grid */
+
+.library-directory {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.directory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.directory-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 30px 24px;
+    width: 280px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Individual accent top-border strip overrides mapping branding logic */
+.card-a1 { border-top: 8px solid var(--level-a1); }
+.card-a2 { border-top: 8px solid var(--level-a2); }
+.card-b1 { border-top: 8px solid var(--level-b1); }
+.card-b2 { border-top: 8px solid var(--level-b2); }
+
+.card-badge {
+    font-family: var(--font-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+.directory-card h3 {
+    font-size: 1.2rem;
+}
+
+.directory-card p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    min-height: 70px;
+}
+
+.card-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-level-display {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-accent);
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    opacity: 80%;
+}
+
+.card-bottom-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 15px;
+    border-left: 2px solid var(--border-color);
+    width: 100%;
+};

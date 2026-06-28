@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+
+        <title>Inglés En Voz Alta</title>
+
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+      <header class="public-header">
+        <a href="/" class="brand-logo">Inglés En Voz Alta</a>
+
+        <div class="header-controls">
+            <div id="lang-toggle" class="lang-switch-capsule" role="button" aria-label="Cambiar idioma">
+                <span class="lang-option active">ES</span>
+                <span class="lang-option">EN</span>
+            </div>
+
+            <button id="theme-toggle" class="icon-utility-btn" aria-label="Cambiar modo de luz/oscuridad">
+                <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+
+            <a href="#" class="login-btn">Accesso Estudiante</a>
+
+            <a href="#" class="signup-btn">Registrarse</a>
+            
+        </div>
+      </header>
+
+      <main class="hero-container">
+        <section class="hero-intro">
+            <div class="lang-block lang-es">
+                <h1 class="marketing-title">Aprende Inglés a tu ritmo. Perfecciona tu fluidez<span class="highlight">en voz alta</span>.</h1>
+                <p class="marketing-subtitle">Explora nuestras listas completas de vocabulario de forma libre. Inscribete como estudiante para desbloquear lecciones guiadas, siguimiento automático y retroalimentación personal.</p>
+            </div>
+            
+            <div class="lang-block lang-en" style="display: none;">
+                <h1 class="marketing-title">Learn English for free. Perfect your fluency <span class="highlight">out loud</span>.</h1>
+                <p class="marketing-subtitle">Explore our complete vocabulary lists freely. Enroll as a student to unlock guided paths, automatic progress tracking, and personalized feedback.</p>
+            </div>
+        </section>
+
+        <section class="hero-interactive-preview">
+            <div class="public-sample-card">
+                <span class="preview-badge">A1</span>
+
+                <div class="card-front-content">
+                    <h2 class="preview-word">HELLO</h2>
+                    <div class="preview-divider"></div>
+                    <p class="preview-phonetic-sound">/je'lou/</p>
+                </div>
+
+                <div class="preview-details">
+                    <p class="tranlation-text"><small>Traducción:</small> Hola</p>
+                    <p class="phonetic-text"><small>Ejemplo:</small>Hello, how are you?</p>
+                </div>
+            </div>
+        </section>
+      </main>
+
+      <section class="library-directory">
+        <div class="lang-block lang-es">
+            <h2 class="section-title">Biblioteca de Vocabulario por Nivel</h2>
+            <p class="section-subtitle">Selecciona una lista para conocer los diferentes vocabularios en cada nivel.</p>
+        </div>
+
+        <div class="directory-grid">
+
+            <div class="directory-card card-a1">
+                <h2 class="card-level-display">A1</h2>
+                
+                <div class="card-bottom-info">
+                <h3>Vocabulario Esencial</h3>
+                <p>Saludos, objetos comunes y verbos básicos de supervivencia.</p>
+                <span class="card-link">Estudiar Lista →</span>
+                </div>
+            </div>
+
+            <div class="directory-card card-a2">
+                <h2 class="card-level-display">A2</h2>
+                
+                <div class="card-bottom-info">
+                <h3>Rutinas y Entorno</h3>
+                <p>Descripciones, el clima, compras y expresiones de tiempo diario.</p>
+                <span class="card-link">Estudiar Lista →</span>
+                </div>
+            </div>
+
+            <div class="directory-card card-b1">
+                <h2 class="card-level-display">B1</h2>
+                
+                <div class="card-bottom-info">
+                <h3>Conversación Fluida</h3>
+                <p>Opiniones, planes futuros, experiencias de viaje y narración.</p>
+                <span class="card-link">Estudiar Lista →</span>
+                </div>
+            </div>
+
+            <div class="directory-card card-b2">
+                <h2 class="card-level-display">B2</h2>
+                
+                <div class="card-bottom-info">
+                <h3>Discurso Profesional</h3>
+                <p>Debates abstractos, modismos avanzados y terminología laboral.</p>
+                <span class="card-link">Estudiar Lista →</span>
+                </div>
+            </div>
+        </div>
+      </section>
+      <script src="js/app.js"></script>
+    </body>
+</html>
