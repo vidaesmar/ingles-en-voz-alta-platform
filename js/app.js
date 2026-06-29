@@ -64,14 +64,14 @@ langToggle.addEventListener('click', () => {
     
     //determine which language is now active based on layout class assignment
     const currentLang = htmlRoot.getAttribute('lang') === 'es' ? 'en' : 'es';
-    htmlRoot.setAttribute('lang', currentLang);
+    htmlRoot.setAttribute('lang', newLang);
 
     //select all translation language blocks 
     const esBlocks = document.querySelectorAll('.lang-es');
     const enBlocks = document.querySelectorAll('.lang-en');
 
     //handle the display visibility flips
-    if (currentLang === 'en') {
+    if (newLang === 'en') {
         esBlocks.forEach(el => el.style.display = 'none');
         enBlocks.forEach(el => el.style.display = 'block');
     } else {
